@@ -13,6 +13,7 @@ Before writing anything, make sure you know:
 - **What** the report covers — a specific project, a repo, a sprint, "everything I did this week"
 - **Time period** — since when? (a date, "this week", "since the last report")
 - **Audience** — a manager, a client, the whole team, personal record-keeping. This changes tone and how much detail to include (a client doesn't need internal implementation notes; a teammate might).
+- **Language** — write the report in whatever language the user and their audience actually use. Match the language of the request and the raw material (e.g. a Portuguese update headed to a Portuguese-speaking manager stays in Portuguese) rather than defaulting to English.
 
 If the user's request already answers these (e.g. "status report for the migration project, this week, for my manager"), don't re-ask — proceed straight to gathering material. Only ask about what's genuinely missing, and prefer a reasonable default (this week, this repo, internal audience) over blocking on a question when the answer is obvious from context.
 
@@ -43,7 +44,7 @@ This is a finished deliverable with an audience, so it belongs published, not le
 
 1. Load the `artifact-design` skill before writing any HTML — it governs layout, spacing, and theme-awareness, and applies here exactly as it would to any other artifact.
 2. If a chart or progress visualization is genuinely warranted by real data (e.g. a burndown, tasks-done-over-time), load `dataviz` too rather than improvising colors and axes by hand.
-3. Write the page: a title naming the project and period (e.g. "Migration – Week 12", not the generic "Status Report"), a date/period line near the top, and the sections from step 3.
+3. Write the page: a title that's the project's own name (e.g. "Payments Cutover", "Q3 Ledger Migration" — not the generic "Status Report", and not the name with the period tacked on after a dash or colon, which `artifact-design` flags as an explainer). Put the date/period on its own line below the title instead, along with the sections from step 3.
 4. Publish with the `Artifact` tool. Pick a favicon that fits the project, and give the artifact a one-sentence `description`.
 5. Hand the user the link rather than also pasting the full report as chat text — a second copy in chat undercuts the point of having a shareable page.
 
